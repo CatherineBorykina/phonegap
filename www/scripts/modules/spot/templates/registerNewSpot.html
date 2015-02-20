@@ -1,0 +1,113 @@
+
+ <div class="container">
+    <br/>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <br/>
+            <div class="list-group" >
+                    <a  href="#/i-have-a-spot/register" class="list-group-item" style="background-color:#D5DED9;"><h3>Register my spot</h3></a>
+                    <a  href="#/i-have-a-spot/schedule" class="list-group-item" ><h3>Schedule my spot</h3></a>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+
+            <div class="tab-content">
+                <div id="registerspot" >
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                <div class="row">
+                    <h4>Add new parking spot and start earn the money !</h4>
+                    <form method="POST" id="register_new_spot" role="form" >
+                        <div class="indicates-required"><span class="asterisk">*</span>required field</div>
+                        <div class="form-group">
+                            <label for="InputUser">Enter address</label>
+                            <div class="input-group">
+                                <input type="text" id="address_field" class="form-control" name="Address" placeholder="Enter address" required>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+                        <script type="text/javascript"></script>
+                        <div class="form-group">
+                            <label for="InputName">Enter city</label>
+                            <div class="input-group">
+                                <input type="text" id="city_field" class="form-control" name="City" placeholder="Enter city" required>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="InputName">Enter province</label>
+                            <select class="form-control" id="province_field" name="Province" >
+                                <option value="AB" class="active">Alberta</option>
+                                <option value="BC">British Columbia</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="NL">Newfoundland and Labrador</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="ON">Ontario</option>
+                                <option value="PE">Prince Edward Island</option>
+                                <option value="QC">Quebec</option>
+                                <option value="SK">Saskatchewan</option>
+                                <option value="NT">Northwest Territories</option>
+                                <option value="NU">Nunavut</option>
+                                <option value="YT">Yukon</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="InputName">Postal Code</label>
+                            <div class="input-group">
+                                <input type="text" id="postalCode_field" class="form-control" name="PostalCode" required>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="InputName">Enter price/hour</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="price_field" name="Price" placeholder="Enter price per hour" required>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="InputName">Enter your condition</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="condition_field" name="Condition" placeholder="Enter condition">
+                                <span class="input-group-addon"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <!--<div class="col-sm-offset-1 col-sm-11">-->
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">I agree to the <a href="#"> Terms and Privacy</a>.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div id="google_map" style="width:95%;height:200px;margin-left:auto;margin-right:auto;"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" value="Register my spot" class="btn btn-info pull-right btn-lg">
+                        </div> 
+                    </form>
+                     
+                </div><!--row-->
+                <div class="row">
+                    <br/>
+                    <div id="success" ></div>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+
+            <!--tab-content-->
+        </div>
+        <!--column-->
+    </div>
+    <br/>
+    <br/>
+
+</div>

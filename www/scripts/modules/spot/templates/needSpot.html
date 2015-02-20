@@ -1,0 +1,53 @@
+<div class="container">
+	<br/><br/>
+	<div class="row">
+        
+        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+			 <div id="google_map" style="width:95%;height:400px;margin-left:auto;margin-right:auto;"></div>
+		</div>
+        
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <form id="find_spot_form" class="form-horizontal" role="form">
+                <div class="form-group">
+                        <label class="col-sm-4 control-label" for="day_of_week" id="selectDay">Day of the week</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" id="day_of_week" name="SelectDay">
+                                <option>Sunday</option>
+                                <option>Monday</option>
+                                <option>Tuesday</option>
+                                <option>Wednesday</option>
+                                <option>Thursday</option>
+                                <option>Friday</option>
+                                <option>Saturday</option>
+                            </select>
+                        </div>
+                 </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="distance" id="selectDistance">Distance, km</label>
+                    <div class="col-sm-7">
+                        <input type=range id="distance" class="form-control" name='address' min="0" max="10" step="0.1">
+                    </div>
+                    <div class="col-sm-1">
+                        <label id="value_of_distance">5 km</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="address" id="selectDay">Address</label>
+                    <div class="col-sm-8">
+                        <input type=text id="address" class="form-control" name='address'>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-8">
+                        <input type=submit value="Find a spot nearby! &raquo;" class="btn btn-submit" style="float: right">
+                    </div>
+                </div>			
+            </form>	
+		</div>			
+	
+	<!--displays the map-->
+	
+		
+		
+	</div>
+</div>
